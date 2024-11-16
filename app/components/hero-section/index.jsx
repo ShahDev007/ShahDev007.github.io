@@ -9,6 +9,7 @@ import { MdDownload } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
 
 function HeroSection({ profile }) {
+  const intro = "Alright! you have come down to the introduction of a person who is caffeine-fueled coder and spent the last few years turning bugs into features. My real superpower is using tech and communication to gain profit for stakeholders. When I'm not building cool stuff, I'm probably drawing diagrams on whiteboards or convincing my team why this new approach could be our next big breakthrough."
 
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
@@ -24,7 +25,7 @@ function HeroSection({ profile }) {
             />
           </div>
           <p className="text-gray-300 text-sm lg:text-base my-4 lg:my-6 text-center">
-          Alright! you have come down to the introduction of a person who is caffeine-fueled coder and spent the last few years turning bugs into features. My real superpower is using tech and communication to gain profit for stakeholders. When I'm not building cool stuff, I'm probably drawing diagrams on whiteboards or convincing my team why this new approach could be our next big breakthrough.
+          {intro}
           </p>
 
           <div className="w-full flex justify-center items-center gap-5">
