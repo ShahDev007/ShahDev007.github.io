@@ -81,7 +81,7 @@ function HeroSection({ profile }) {
             <code className="font-mono text-xs md:text-sm lg:text-base">
               <div className="blink">
                 <span className="mr-2 text-pink-400">const</span>
-                <span className="mr-2 text-violet-400">coder</span>
+                <span className="mr-2 text-violet-400">developer</span>
                 <span className="mr-2 text-pink-400">=</span>
                 <span className="text-gray-400">{'{'}</span>
               </div>
