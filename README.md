@@ -6,7 +6,7 @@
 
 # Demo :movie_camera:
 
-![httpsgithub abusaid me](https://github.com/said7388/github-portfolio/assets/77630868/a331f996-1b4d-451a-941f-a15f5ae6de93)
+![httpsgithub abusaid me](https://github.com/said7388/dev-portfolio/assets/77630868/a331f996-1b4d-451a-941f-a15f5ae6de93)
 
 
 ## View live preview [here](https://my-github-portfolio.netlify.app/)
@@ -38,7 +38,7 @@ To Fork the repo click on the fork button at the top right of the page. Once the
 ```
 git clone https://github.com/<YOUR GITHUB USERNAME>/github-portfolio.git
 
-cd github-portfolio
+cd dev-portfolio
 ```
 
 ### Install packages from the root directory

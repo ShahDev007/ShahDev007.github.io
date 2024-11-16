@@ -3,8 +3,8 @@
 import { userData } from "@/data/user-data";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
 
@@ -24,7 +24,7 @@ function HeroSection({ profile }) {
             />
           </div>
           <p className="text-gray-300 text-sm lg:text-base my-4 lg:my-6 text-center">
-            {profile.bio}
+          Alright! you have come down to the introduction of a person who is caffeine-fueled coder and spent the last few years turning bugs into features. My real superpower is using tech and communication to gain profit for stakeholders. When I'm not building cool stuff, I'm probably drawing diagrams on whiteboards or convincing my team why this new approach could be our next big breakthrough.
           </p>
 
           <div className="w-full flex justify-center items-center gap-5">
@@ -42,13 +42,7 @@ function HeroSection({ profile }) {
             >
               <BsLinkedin size={24} />
             </Link>
-            <Link
-              href={userData.facebook}
-              target='_blank'
-              className="transition-all text-teal-500 hover:scale-125 duration-300"
-            >
-              <FaFacebook size={24} />
-            </Link>
+            
             <Link
               href={userData.leetcode}
               target='_blank'
@@ -56,13 +50,7 @@ function HeroSection({ profile }) {
             >
               <SiLeetcode size={24} />
             </Link>
-            <Link
-              href={userData.twitter}
-              target='_blank'
-              className="transition-all text-teal-500 hover:scale-125 duration-300"
-            >
-              <FaTwitterSquare size={24} />
-            </Link>
+            
           </div>
 
           <div className="w-full justify-center flex items-center gap-3 mt-6">
@@ -129,25 +117,28 @@ function HeroSection({ profile }) {
                 <span className="text-orange-400">{profile.public_repos}</span>
                 <span className="text-gray-400">,</span>
               </div>
-              <div className="ml-4 lg:ml-8 mr-2">
-                <span className=" text-white">skills:</span>
-                <span className="text-gray-400">{`['`}</span>
-                {
-                  userData.skills.map((skill, i) => (
-                    <>
-                      <span className="text-cyan-400">{skill}</span>
-                      {
-                        i !== userData.skills.length - 1 &&
-                        <span className="text-gray-400">{"', '"}</span>
-                      }
-                    </>
-                  ))
-                }
-                <span className="text-gray-400">{"'],"}</span>
+              <div className="space-y-4">
+                {Object.entries(userData.skills).map(([category, skills]) => (
+                  <div key={category} className="ml-4 lg:ml-8 mr-2">
+                    <span className="text-white capitalize">
+                      {category.replace(/([A-Z])/g, ' $1').trim()}:
+                    </span>
+                    <span className="text-gray-400">{`['`}</span>
+                    {skills.map((skill, i) => (
+                      <React.Fragment key={skill}>
+                        <span className="text-cyan-400">{skill}</span>
+                        {i !== skills.length - 1 && (
+                          <span className="text-gray-400">{"', '"}</span>
+                        )}
+                      </React.Fragment>
+                    ))}
+                    <span className="text-gray-400">{"'],"}</span>
+                  </div>
+                ))}
               </div>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">hireable:</span>
-                <span className="text-orange-400">{profile?.hireable.toString()}</span>
+                <span className="text-orange-400">True</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div><span className="text-gray-400">{`};`}</span></div>

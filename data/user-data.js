@@ -1,13 +1,28 @@
 export const userData = {
-  githubUser: 'said7388',
-  devUsername: "said7388",
-  github: 'https://github.com/said7388',
-  facebook: 'https://www.facebook.com/abusaid.riyaz/',
-  linkedIn: 'https://www.linkedin.com/in/abu-said-bd/',
-  twitter: 'https://twitter.com/said7388',
-  stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-  leetcode: "https://leetcode.com/said3812/",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing",
-  skills: ['React', 'NextJS', 'Redux', 'Express', 'NestJS', 'MySql', 'MongoDB', 'Postgres', 'Docker', 'AWS'],
+  githubUser: 'ShahDev007',
+  devUsername: "ShahDev007",
+  github: 'https://github.com/ShahDev007',
+  linkedIn: 'https://www.linkedin.com/in/ShahDev007/',
+  leetcode: "https://leetcode.com/ShahDev007/",
+  resume: "https://shahdev007.github.io/Resume/Dev-SE-Resume.pdf",
+  skills: {
+    programmingLanguages: [
+      'Javascript','Python', 'C', 'SQL', 'PHP', 'Bash Shell Scripting'
+    ],
+    librariesFrameworks: [
+      'TypeScript', 'JavaScript', 'React.js', 'Next.js', 'Node.js', 
+      'Express.js', 'GraphQL'
+    ],
+    toolsSoftware: [
+      'AWS', 'GitHub', 'Bitbucket', 'Power BI', 'Tableau', 'Graphana', 'Prometheus',
+      'Postman', 'Vercel', 'JIRA', 'Excel', 'GCP', 'Kubernetes', 'Linux'
+    ],
+    databases: [
+      'MySQL', 'NoSQL', 'PostgreSQL', 'DynamoDB'
+    ],
+    foundations: [
+      'AI', 'DevOps', 'CI/CD', 'Restful API'
+    ]
+  },
   timezone: '+6'
 };

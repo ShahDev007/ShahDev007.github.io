@@ -1,6 +1,6 @@
 {
-  "name": "github-portfolio",
-  "description": "Portfolio of Abu Said - Github profile",
+  "name": "dev-portfolio",
+  "description": "Portfolio of Dev Shah - Github profile",
   "version": "0.1.0",
   "private": true,
   "scripts": {
