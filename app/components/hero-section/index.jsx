@@ -21,7 +21,7 @@ function HeroSection({ profile }) {
               width={128}
               height={128}
               alt={profile.name}
-              className="rounded-full transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+              className="rounded-full"
             />
           </div>
           <p className="text-gray-300 text-sm lg:text-base my-4 lg:my-6 text-center">
@@ -80,7 +80,7 @@ function HeroSection({ profile }) {
           <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
             <code className="font-mono text-xs md:text-sm lg:text-base">
               <div className="blink">
-                <span className="mr-2 text-pink-400">const</span>
+                <span className="mr-2 text-pink-400">let</span>
                 <span className="mr-2 text-violet-400">developer</span>
                 <span className="mr-2 text-pink-400">=</span>
                 <span className="text-gray-400">{'{'}</span>

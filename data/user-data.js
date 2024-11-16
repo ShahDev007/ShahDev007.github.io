@@ -6,14 +6,14 @@ export const userData = {
   leetcode: "https://leetcode.com/ShahDev007/",
   resume: "https://shahdev007.github.io/Resume/Dev-SE-Resume.pdf",
   skills: {
-    programmingLanguages: [
+    'programmingLanguages': [
       'Javascript','Python', 'C', 'SQL', 'PHP', 'Bash Shell Scripting'
     ],
-    librariesFrameworks: [
+    'libraries /Frameworks': [
       'TypeScript', 'JavaScript', 'React.js', 'Next.js', 'Node.js', 
       'Express.js', 'GraphQL'
     ],
-    toolsSoftware: [
+    'tools /Software': [
       'AWS', 'GitHub', 'Bitbucket', 'Power BI', 'Tableau', 'Graphana', 'Prometheus',
       'Postman', 'Vercel', 'JIRA', 'Excel', 'GCP', 'Kubernetes', 'Linux'
     ],
