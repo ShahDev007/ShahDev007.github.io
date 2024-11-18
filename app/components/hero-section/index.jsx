@@ -86,35 +86,35 @@ function HeroSection({ profile }) {
                 <span className="text-gray-400">{'{'}</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">Name:</span>
                 <span className="text-gray-400">{`'`}</span>
                 <span className="text-green-400">{profile.name}</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">company:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">University:</span>
                 <span className="text-gray-400">{`'`}</span>
                 <span className="text-green-400">{profile.company}</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">location:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">Location:</span>
                 <span className="text-gray-400">{`'`}</span>
                 <span className="text-green-400">{profile.location}</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">followers:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">Followers:</span>
                 <span className="text-orange-400">{profile.followers}</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">following:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">Following:</span>
                 <span className="text-orange-400">{profile.following}</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">repositories:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">Repositories:</span>
                 <span className="text-orange-400">{profile.public_repos}</span>
                 <span className="text-gray-400">,</span>
               </div>
@@ -138,7 +138,7 @@ function HeroSection({ profile }) {
                 ))}
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">hireable:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">Hireable:</span>
                 <span className="text-orange-400">True</span>
                 <span className="text-gray-400">,</span>
               </div>
