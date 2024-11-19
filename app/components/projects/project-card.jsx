@@ -6,7 +6,8 @@ import { IoLinkSharp } from "react-icons/io5";
 
 // @flow strict
 function ProjectCard({ project }) {
-
+  console.log("Project",project);
+  
   return (
     <Link href={project.html_url} target="_blank">
       <div className="p-8 h-48 flex flex-col justify-between bg-primary-bg">
@@ -20,6 +21,11 @@ function ProjectCard({ project }) {
           <p className="line-clamp-2 text-primary-text my-5 text-sm">
             {project.description}
           </p>
+          {/* <img 
+            src={`https://opengraph.githubassets.com/ShahDev007/${project.name}/social`}
+            alt={project.name}
+            // className="w-full h-auto"
+          /> */}
         </div>
 
         <div className="flex justify-between items-center">
