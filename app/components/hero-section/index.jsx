@@ -54,7 +54,7 @@ function HeroSection({ profile }) {
             
           </div>
 
-          <div className="w-full justify-center flex items-center gap-3 mt-6">
+          <div className="w-full justify-center flex items-center gap-0 mt-6">
             <Link target="_blank" href={userData.resume} className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
               <button className="px-3 text-xs md:px-4 py-2 md:py-2.5 bg-[#0d1224] rounded-full border-none text-center font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
                 <span>Get Resume</span>
@@ -95,6 +95,12 @@ function HeroSection({ profile }) {
                 <span className="ml-4 lg:ml-8 mr-2 text-white">University:</span>
                 <span className="text-gray-400">{`'`}</span>
                 <span className="text-green-400">{profile.company}</span>
+                <span className="text-gray-400">{`',`}</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">Previous Employer:</span>
+                <span className="text-gray-400">{`'`}</span>
+                <span className="text-green-400">Wildcat Discovery Technologies (San Diego)</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div>

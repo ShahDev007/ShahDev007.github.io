@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaRegStar } from "react-icons/fa";
 import { FaCodeFork } from "react-icons/fa6";
 import { IoLinkSharp } from "react-icons/io5";
+import ProjectThumbnail from "./img_val";
 
 // @flow strict
 function ProjectCard({ project }) {
@@ -10,7 +11,7 @@ function ProjectCard({ project }) {
   
   return (
     <Link href={project.html_url} target="_blank">
-      <div className="p-8 h-48 flex flex-col justify-between bg-primary-bg">
+      <div className="p-8 h-78 flex flex-col justify-between bg-primary-bg">
         <div className="">
           <div className="flex justify-between items-center">
             <p className="text-xl font-semibold capitalize text-primary-title">
@@ -21,11 +22,9 @@ function ProjectCard({ project }) {
           <p className="line-clamp-2 text-primary-text my-5 text-sm">
             {project.description}
           </p>
-          {/* <img 
-            src={`https://opengraph.githubassets.com/ShahDev007/${project.name}/social`}
-            alt={project.name}
-            // className="w-full h-auto"
-          /> */}
+          
+          <ProjectThumbnail projectName={project.name} />
+
         </div>
 
         <div className="flex justify-between items-center">
