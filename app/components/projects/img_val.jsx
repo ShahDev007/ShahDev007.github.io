@@ -18,7 +18,7 @@ function ProjectThumbnail({ projectName }) {
         <img
           src={`project-thumbnails/${projectName}.png`}
           alt="Project Dashboard Preview"
-          className="w-full h-45 object-cover rounded-md"
+          className="w-full h-40 object-cover rounded-md"
         />
       )}
     </>
